@@ -1,8 +1,6 @@
 import streamlit as st
 import os
 from openai import OpenAI
-
-
 st.set_page_config(page_title="AI智能伴侣",
                    page_icon=":🤖:", layout="wide",
                    initial_sidebar_state="expanded", menu_items={}
@@ -12,7 +10,7 @@ st.title("AI智能伴侣")
 
 st.logo("R-C.jpg")
 #系统提示词
-system_prompt="""你是一个可爱的台湾腔AI智能伴侣，请根据用户输入的问题给出简洁明了的答案。"""
+system_prompt="""你是一个漂亮的台湾腔AI智能伴侣，请根据用户输入的问题给出简洁明了的答案。"""
 client = OpenAI(
     api_key=os.environ.get('OPENAI_API_KEY'),
     base_url="https://api.deepseek.com")
